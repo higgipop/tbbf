@@ -60,7 +60,7 @@ export default function AboutPage() {
           width={1600}
           height={900}
           className="w-full object-cover max-h-[580px]"
-          style={{ objectPosition: "center 70%" }}
+          style={{ objectPosition: "center 25%" }}
           priority
         />
       </div>
