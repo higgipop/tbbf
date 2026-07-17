@@ -19,7 +19,7 @@ export default function MemberSearch({ members }: { members: Member[] }) {
 
   return (
     <>
-      <div className="mb-10">
+      <div className="sticky top-16 z-40 -mx-6 px-6 py-3 bg-[#F8F7F4] border-b border-black/6 mb-8">
         <input
           type="search"
           placeholder="Search by name, company, or specialty…"

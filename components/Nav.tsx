@@ -3,7 +3,7 @@ import { LogoMark } from "./Logo";
 
 export default function Nav() {
   return (
-    <header className="bg-[#0F1F3C] border-b border-white/10">
+    <header className="sticky top-0 z-50 bg-[#0F1F3C] border-b border-white/10">
       <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-3 group">
           <LogoMark size={36} />
