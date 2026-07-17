@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { members } from "@/lib/members";
 
 const jsonLd = {
@@ -90,6 +91,19 @@ export default function HomePage() {
           </dl>
         </div>
       </section>
+
+      {/* Group photo */}
+      <div className="w-full">
+        <Image
+          src="/group-photo.jpg"
+          alt="Tampa Bay Business Forum members"
+          width={1600}
+          height={900}
+          className="w-full object-cover max-h-[560px]"
+          style={{ objectPosition: "center 25%" }}
+          priority
+        />
+      </div>
 
       {/* About */}
       <section className="max-w-6xl mx-auto px-6 py-20 md:py-28">
