@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { members } from "@/lib/members";
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -75,8 +76,8 @@ export default function HomePage() {
         <div className="max-w-6xl mx-auto px-6 py-10">
           <dl className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {[
-              { value: "24", label: "Active Members" },
-              { value: "24", label: "Industries Represented" },
+              { value: {members.length.toString()}, label: "Active Members" },
+              { value: {members.length.toString()}, label: "Industries Represented" },
               { value: "Tampa Bay", label: "Area Served" },
               { value: "Invite Only", label: "Membership" },
             ].map(({ value, label }) => (

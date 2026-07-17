@@ -14,7 +14,7 @@ const MEMBER_EMAILS = {
   "jennifer-ihrig":      "jihrig@propelrpay.com",
   "jon-slater":          "jslater@lpc.com",
   "juan-segura":         "juan@seguragallo.com",
-  "justin-cole":         "justin@getteamgear.com",
+  "justin-cole":         "Justin.Cole@halo.com",
   "larry-stephen":       "larry.stephen@thedesignfirminc.com",
   "mark-purtee":         "m.purtee@murphybusiness.com",
   "michael-higgins":     "michael@ultradesignagency.com",
