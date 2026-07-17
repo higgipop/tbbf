@@ -1,0 +1,17 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="200" height="200" fill="#F8F7F4"/>
+  <rect x="10" y="10" width="180" height="180" fill="none" stroke="#BF9040" stroke-width="7"/>
+  <text
+    font-family="Inter, system-ui, -apple-system, sans-serif"
+    font-weight="800"
+    font-size="82"
+    fill="#0F1F3C"
+    text-anchor="middle"
+    dominant-baseline="central"
+  >
+    <tspan x="57" y="60">T</tspan>
+    <tspan x="143" y="60">B</tspan>
+    <tspan x="57" y="148">B</tspan>
+    <tspan x="143" y="148">F</tspan>
+  </text>
+</svg>
