@@ -14,23 +14,7 @@ export interface Member {
 }
 
 export const members: Member[] = [
-  {
-    slug: "anh-spear",
-    name: "Anh Spear",
-    company: "Quantum IQ Consulting",
-    category: "AI Transformation",
-    email: "anh@quantum-iq.ai",
-    phone: "(703) 861-7339",
-  },
-  {
-    slug: "brian-damasiewicz",
-    name: "Brian Damasiewicz",
-    company: "Prime Vest Financial Services",
-    category: "Wealth Management",
-    email: "brian.damasiewicz@nm.com",
-    phone: "(813) 334-5442",
-  },
-  {
+{
     slug: "brian-dodd",
     name: "Brian Dodd",
     company: "Next Path Career Partners",
