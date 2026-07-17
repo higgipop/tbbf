@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { members } from "@/lib/members";
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -76,8 +75,8 @@ export default function HomePage() {
         <div className="max-w-6xl mx-auto px-6 py-10">
           <dl className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {[
-              { value: members.length.toString(), label: "Active Members" },
-              { value: members.length.toString(), label: "Industries Represented" },
+              { value: "24", label: "Active Members" },
+              { value: "24", label: "Industries Represented" },
               { value: "Tampa Bay", label: "Area Served" },
               { value: "Invite Only", label: "Membership" },
             ].map(({ value, label }) => (
@@ -138,34 +137,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Member preview strip */}
-      <section className="bg-[#0F1F3C]/4 border-t border-black/8 py-16">
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="flex items-center justify-between mb-8">
-            <h2 className="text-2xl font-bold text-[#0F1F3C]">Our Members</h2>
-            <Link
-              href="/members"
-              className="text-[#BF9040] hover:text-[#D4AA5A] text-sm font-semibold transition-colors"
-            >
-              View all →
-            </Link>
-          </div>
-          <div className="flex flex-wrap gap-3">
-            {members.map((m) => (
-              <Link
-                key={m.slug}
-                href={`/members/${m.slug}`}
-                className="bg-white hover:bg-[#0F1F3C] hover:text-white text-[#0F1F3C] border border-black/8 hover:border-[#0F1F3C] rounded-full px-4 py-2 text-sm font-medium transition-all duration-150"
-              >
-                {m.name}
-                <span className="text-gray-400 hover:text-white/60 ml-2 text-xs font-normal">
-                  {m.category}
-                </span>
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
     </>
   );
 }
