@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "About",
@@ -50,6 +51,18 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
+
+      {/* Group photo */}
+      <div className="w-full bg-[#0F1F3C]/4">
+        <Image
+          src="/group-photo.jpg"
+          alt="Tampa Bay Business Forum members"
+          width={1600}
+          height={900}
+          className="w-full object-cover max-h-[480px]"
+          priority
+        />
+      </div>
 
       {/* How it works */}
       <section className="max-w-6xl mx-auto px-6 py-20 md:py-28">
