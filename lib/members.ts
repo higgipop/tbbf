@@ -8,6 +8,7 @@ export interface Member {
   website?: string;
   linkedin?: string;
   bio?: string;
+  areaOfFocus?: string;
   companyBio?: string;
   yearsInGroup?: number;
   hasPhoto?: boolean;
@@ -119,6 +120,9 @@ export const members: Member[] = [
     phone: "(813) 205-6160",
     website: "https://ultradesignagency.com",
     linkedin: "https://linkedin.com/in/higginsmichaelw/",
+    bio: "Michael's life revolves around work, church, and his big family activities. You'll also find him camping, watching & playing soccer, teaching, and grilling. He holds a B.A. from Ave Maria University and an MA in Humanities from California State University. Before running ULTRA he taught at Jesuit High School for five years — and maintains relationships within both alumni communities.",
+    areaOfFocus: "Michael Higgins is the Director of Operations and manages both Sales & Project Management.",
+    companyBio: "ULTRA Design Agency develops, maintains, and governs websites for small to medium sized businesses throughout the United States and Europe. The particular verticals it excels in are Finance, Legal, Healthcare, Multi-Location Service Businesses, Defense, and Hospitality.",
     yearsInGroup: 8,
     hasPhoto: true,
   },

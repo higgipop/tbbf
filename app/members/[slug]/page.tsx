@@ -154,8 +154,7 @@ export default async function MemberProfilePage({
             <div>
               <h2 className="text-lg font-semibold text-[#0F1F3C] mb-3">Area of Focus</h2>
               <p className="text-gray-600 leading-relaxed">
-                {member.name} is TBBF&rsquo;s {member.category} specialist,
-                serving clients throughout the Tampa Bay area.
+                {member.areaOfFocus ?? `${member.name} is TBBF’s ${member.category} specialist, serving clients throughout the Tampa Bay area.`}
               </p>
             </div>
 
