@@ -134,7 +134,9 @@ export const members: Member[] = [
     email: "michael@ultradesignagency.com",
     phone: "(813) 205-6160",
     website: "https://ultradesignagency.com",
+    linkedin: "https://www.linkedin.com/in/michaelhiggins-ultra/",
     yearsInGroup: 8,
+    hasPhoto: true,
   },
   {
     slug: "michael-kimling",

@@ -12,11 +12,11 @@ export default function Nav() {
             Tampa Bay Business Forum
           </span>
         </Link>
-        <nav>
-          <Link
-            href="/members"
-            className="text-white/70 hover:text-white text-sm transition-colors"
-          >
+        <nav className="flex items-center gap-6">
+          <Link href="/about" className="text-white/70 hover:text-white text-sm transition-colors">
+            About
+          </Link>
+          <Link href="/members" className="text-white/70 hover:text-white text-sm transition-colors">
             Members
           </Link>
         </nav>
