@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { members, getMemberBySlug } from "@/lib/members";
 import Avatar from "@/components/Avatar";
+import ContactForm from "@/components/ContactForm";
 
 export function generateStaticParams() {
   return members.map((m) => ({ slug: m.slug }));
@@ -234,8 +235,24 @@ export default async function MemberProfilePage({
         </div>
       </div>
 
+      {/* Contact form */}
+      <div id="contact" className="bg-white border-t border-black/8">
+        <div className="max-w-6xl mx-auto px-6 py-16">
+          <div className="max-w-xl">
+            <h2 className="text-2xl font-bold text-[#0F1F3C] mb-2">
+              Send {member.name} a message
+            </h2>
+            <p className="text-gray-500 text-sm mb-8">
+              Your message goes directly to {member.name}. Your contact information
+              is never shared publicly.
+            </p>
+            <ContactForm slug={member.slug} memberName={member.name} />
+          </div>
+        </div>
+      </div>
+
       {/* Back link */}
-      <div className="max-w-6xl mx-auto px-6 pb-16">
+      <div className="max-w-6xl mx-auto px-6 py-10">
         <Link
           href="/members"
           className="inline-flex items-center gap-2 text-sm text-gray-400 hover:text-[#0F1F3C] transition-colors"
