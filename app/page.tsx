@@ -152,6 +152,25 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* CTA */}
+      <section className="bg-[#0F1F3C]">
+        <div className="max-w-6xl mx-auto px-6 py-16 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
+          <div>
+            <h2 className="text-xl font-bold text-white mb-1">
+              Looking for a TBBF member?
+            </h2>
+            <p className="text-white/50 text-sm">
+              {members.length} professionals. {members.length} industries. One introduction away.
+            </p>
+          </div>
+          <Link
+            href="/members"
+            className="flex-shrink-0 inline-flex items-center gap-2 bg-[#BF9040] hover:bg-[#D4AA5A] text-white font-semibold px-6 py-3 rounded-lg transition-colors text-sm"
+          >
+            Meet our members →
+          </Link>
+        </div>
+      </section>
     </>
   );
 }

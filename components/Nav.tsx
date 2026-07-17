@@ -12,9 +12,6 @@ export default function Nav() {
           </span>
         </Link>
         <nav className="flex items-center gap-6">
-          <Link href="/about" className="text-white/70 hover:text-white text-sm transition-colors">
-            About
-          </Link>
           <Link href="/members" className="text-white/70 hover:text-white text-sm transition-colors">
             Members
           </Link>

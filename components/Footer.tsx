@@ -1,12 +1,22 @@
+import Link from "next/link";
+import { LogoMark } from "./Logo";
+
 export default function Footer() {
-  const year = new Date().getFullYear();
   return (
-    <footer className="bg-[#0F1F3C] border-t border-white/10 mt-auto">
-      <div className="max-w-6xl mx-auto px-6 py-8 flex flex-col sm:flex-row items-center justify-between gap-4">
-        <p className="text-white/50 text-sm">
-          © {year} Tampa Bay Business Forum. All rights reserved.
+    <footer className="bg-[#0F1F3C] border-t border-white/10">
+      <div className="max-w-6xl mx-auto px-6 py-10 flex flex-col sm:flex-row items-center justify-between gap-6">
+        <Link href="/" className="flex items-center gap-3 group">
+          <LogoMark size={28} />
+          <span className="text-white/70 group-hover:text-white text-sm font-medium transition-colors">
+            Tampa Bay Business Forum
+          </span>
+        </Link>
+        <nav className="flex items-center gap-6 text-sm text-white/50">
+          <Link href="/members" className="hover:text-white transition-colors">Members</Link>
+        </nav>
+        <p className="text-white/30 text-xs">
+          &copy; {new Date().getFullYear()} Tampa Bay Business Forum
         </p>
-        <p className="text-white/40 text-xs">Membership by invitation only.</p>
       </div>
     </footer>
   );

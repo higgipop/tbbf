@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 import { members } from "@/lib/members";
-import MemberCard from "@/components/MemberCard";
+import MemberSearch from "@/components/MemberSearch";
 
 export const metadata: Metadata = {
   title: "Members",
   description:
-    "Meet the 24 vetted professionals of the Tampa Bay Business Forum — one per industry, committed to referring each other across the Tampa Bay area.",
+    "Meet the vetted professionals of the Tampa Bay Business Forum — one per industry, committed to referring each other across the Tampa Bay area.",
 };
 
 export default function MembersPage() {
@@ -20,11 +20,7 @@ export default function MembersPage() {
         </p>
       </div>
 
-      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-5">
-        {sorted.map((member) => (
-          <MemberCard key={member.slug} member={member} />
-        ))}
-      </div>
+      <MemberSearch members={sorted} />
     </div>
   );
 }
