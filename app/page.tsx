@@ -76,8 +76,8 @@ export default function HomePage() {
         <div className="max-w-6xl mx-auto px-6 py-10">
           <dl className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {[
-              { value: {members.length.toString()}, label: "Active Members" },
-              { value: {members.length.toString()}, label: "Industries Represented" },
+              { value: members.length.toString(), label: "Active Members" },
+              { value: members.length.toString(), label: "Industries Represented" },
               { value: "Tampa Bay", label: "Area Served" },
               { value: "Invite Only", label: "Membership" },
             ].map(({ value, label }) => (
