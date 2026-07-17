@@ -8,6 +8,7 @@ export interface Member {
   website?: string;
   linkedin?: string;
   bio?: string;
+  companyBio?: string;
   yearsInGroup?: number;
   hasPhoto?: boolean;
 }
