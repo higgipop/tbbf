@@ -59,7 +59,7 @@ export default function AboutPage() {
           alt="Tampa Bay Business Forum members"
           width={1600}
           height={900}
-          className="w-full object-cover max-h-[480px]"
+          className="w-full object-cover object-top max-h-[480px]"
           priority
         />
       </div>
