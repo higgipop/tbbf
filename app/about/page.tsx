@@ -72,15 +72,16 @@ export default function AboutPage() {
             <h2 className="text-3xl font-bold text-[#0F1F3C] mb-6">How it works</h2>
             <div className="space-y-6 text-gray-600 leading-relaxed">
               <p>
-                TBBF members meet weekly. Each meeting follows a consistent
-                format — members share updates, pass referrals, and hold each
-                other accountable to results. The structure keeps the group
-                focused and the relationships sharp.
+                The Tampa Bay Business Forum is a Business-to-Business member
+                organization and a forum to network in a professional atmosphere.
+                Sales professionals and business leaders that sell primarily or
+                totally to business enterprises are invited to apply.
               </p>
               <p>
-                Referrals are tracked. Members know who&rsquo;s contributing,
-                who&rsquo;s receiving, and what&rsquo;s converting. That
-                transparency keeps the group honest and the deal flow real.
+                The group provides a resource of information for business
+                professionals and topics of common interest. Through active
+                participation, members can promote their own businesses, give
+                presentations, increase their visibility, and exchange referrals.
               </p>
               <p>
                 When a TBBF member refers you to one of our colleagues, you

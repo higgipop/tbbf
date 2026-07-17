@@ -41,10 +41,11 @@ export default function HomePage() {
               <br />
               referral network.
             </h1>
-            <p className="text-white/70 text-lg leading-relaxed mb-10 max-w-xl">
-              TBBF is an invite-only group of 24 trusted professionals — one per
-              industry — who refer each other to clients across the Tampa Bay area.
-              Membership is by introduction only.
+            <p className="text-white/80 text-lg italic leading-relaxed mb-10 max-w-xl border-l-2 border-[#BF9040] pl-5">
+              &ldquo;A group of like-minded, achievement-oriented business
+              professionals coming together to create an association far greater
+              than the sum of its parts, thus dramatically leveraging each
+              other&rsquo;s success.&rdquo;
             </p>
             <Link
               href="/members"
@@ -98,14 +99,16 @@ export default function HomePage() {
               Built on trust, not transactions.
             </h2>
             <p className="text-gray-600 leading-relaxed mb-4">
-              TBBF operates on a simple principle: the best business introductions
-              come from people who know each other well. Members meet regularly, refer
-              intentionally, and hold each other accountable to results.
+              The Tampa Bay Business Forum is a Business-to-Business member
+              organization and a forum to network in a professional atmosphere.
+              Sales professionals and business leaders that sell primarily or
+              totally to business enterprises are invited to apply.
             </p>
             <p className="text-gray-600 leading-relaxed">
-              Each seat in the group is exclusive to one professional per category.
-              When a member refers you, it means something — there&rsquo;s no
-              competing colleague in the same room.
+              The group provides a resource of information for business
+              professionals and topics of common interest. Through active
+              participation, members promote their own businesses, give
+              presentations, increase their visibility, and exchange referrals.
             </p>
           </div>
           <div className="space-y-5">
