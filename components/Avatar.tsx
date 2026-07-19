@@ -30,7 +30,7 @@ export default function Avatar({ name, slug, hasPhoto, size = "sm" }: AvatarProp
   if (hasPhoto) {
     return (
       <Image
-        src={`/members/${slug}.jpg`}
+        src={`/members/${slug}/photo.jpg`}
         alt={name}
         width={dim}
         height={dim}
