@@ -191,6 +191,14 @@ export const members: Member[] = [
     phone: "(727) 742-4648",
   },
   {
+    slug: "gary-hoffman",
+    name: "Gary Hoffman",
+    company: "Olympia Moving",
+    category: "Commercial Mover",
+    email: "ghoffman@olympiamoving.com",
+    phone: "(813) 736-1662",
+  },
+  {
     slug: "vanessa-ferguson",
     name: "Vanessa Ferguson",
     company: "Fidara Legal, PLLC",

@@ -26,6 +26,7 @@ const MEMBER_EMAILS = {
   "sergei-galeano":      "sgaleano@galeanocfo.com",
   "shane-mihok":         "shane.mihok@rofinc.com",
   "shawn-spiering":      "sspiering@adt.com",
+  "gary-hoffman":        "ghoffman@olympiamoving.com",
   "vanessa-ferguson":    "vanessa@fidaralegal.com",
 };
 
