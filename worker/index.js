@@ -87,7 +87,7 @@ export default {
       return respond({ error: "Invalid JSON" }, 400, origin, allowed);
     }
 
-    const { slug, senderName, senderEmail, senderPhone, message } = body;
+    const { slug, senderName, senderEmail, senderPhone, senderCompany, senderIndustry, message } = body;
 
     if (!slug || !senderName || !senderEmail || !message) {
       return respond({ error: "Missing required fields" }, 400, origin, allowed);
@@ -102,12 +102,15 @@ export default {
     if (
       String(senderName).length > 120 ||
       String(senderEmail).length > 254 ||
+      String(senderCompany || "").length > 120 ||
+      String(senderIndustry || "").length > 120 ||
       String(message).length > 4000
     ) {
       return respond({ error: "Input too long" }, 400, origin, allowed);
     }
 
-    const toEmail = MEMBER_EMAILS[slug];
+    const isApplication = slug === "apply";
+    const toEmail = isApplication ? "mkimling@mail.com" : MEMBER_EMAILS[slug];
     if (!toEmail) {
       return respond({ error: "Member not found" }, 404, origin, allowed);
     }
@@ -116,10 +119,36 @@ export default {
       return respond({ error: "Email service not configured" }, 500, origin, allowed);
     }
 
-    // Static subject — user-supplied names go only inside the sanitized HTML body
-    const subject = "New message via Tampa Bay Business Forum";
+    const subject = isApplication
+      ? "New Membership Application — Tampa Bay Business Forum"
+      : "New message via Tampa Bay Business Forum";
 
-    const html = `
+    const html = isApplication
+      ? `
+      <div style="font-family:system-ui,sans-serif;max-width:560px;margin:0 auto">
+        <p style="color:#6b7280;font-size:13px;margin-bottom:24px">
+          Submitted via the Tampa Bay Business Forum membership application form
+        </p>
+        <h2 style="font-size:20px;color:#0F1F3C;margin:0 0 4px">
+          Membership Application from ${escHtml(senderName)}
+        </h2>
+        <p style="color:#6b7280;font-size:14px;margin:0 0 24px">
+          ${escHtml(senderEmail)}${senderPhone ? ` · ${escHtml(senderPhone)}` : ""}
+        </p>
+        ${senderCompany || senderIndustry ? `
+        <table style="width:100%;border-collapse:collapse;margin-bottom:20px">
+          ${senderCompany ? `<tr><td style="font-size:13px;color:#6b7280;padding:6px 0;border-bottom:1px solid #e5e7eb;width:120px">Company</td><td style="font-size:13px;color:#1A1A2E;padding:6px 0;border-bottom:1px solid #e5e7eb">${escHtml(senderCompany)}</td></tr>` : ""}
+          ${senderIndustry ? `<tr><td style="font-size:13px;color:#6b7280;padding:6px 0;border-bottom:1px solid #e5e7eb;width:120px">Industry</td><td style="font-size:13px;color:#1A1A2E;padding:6px 0;border-bottom:1px solid #e5e7eb">${escHtml(senderIndustry)}</td></tr>` : ""}
+        </table>` : ""}
+        <div style="background:#f8f7f4;border-left:3px solid #BF9040;padding:16px 20px;border-radius:0 8px 8px 0">
+          <p style="margin:0;color:#1A1A2E;line-height:1.6;white-space:pre-wrap">${escHtml(message)}</p>
+        </div>
+        <p style="margin-top:24px;font-size:13px;color:#9ca3af">
+          To reply, copy the sender's email above — do not reply directly to this message.
+        </p>
+      </div>
+      `
+      : `
       <div style="font-family:system-ui,sans-serif;max-width:560px;margin:0 auto">
         <p style="color:#6b7280;font-size:13px;margin-bottom:24px">
           Sent via the Tampa Bay Business Forum contact form
@@ -139,20 +168,24 @@ export default {
       </div>
     `;
 
+    const emailPayload = {
+      from: "Tampa Bay Business Forum <contact@tampababusinessforum.com>",
+      to: [toEmail],
+      subject,
+      html,
+    };
+
+    if (isApplication) {
+      emailPayload.bcc = ["michael@ultradesignagency.com"];
+    }
+
     const res = await fetch("https://api.resend.com/emails", {
       method: "POST",
       headers: {
         Authorization: `Bearer ${env.RESEND_API_KEY}`,
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({
-        from: "Tampa Bay Business Forum <contact@tampababusinessforum.com>",
-        to: [toEmail],
-        // No reply_to — sender's email is visible in the body only,
-        // so the member consciously copies it before responding.
-        subject,
-        html,
-      }),
+      body: JSON.stringify(emailPayload),
     });
 
     if (!res.ok) {

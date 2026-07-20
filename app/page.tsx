@@ -115,12 +115,18 @@ export default function HomePage() {
               Sales professionals and business leaders that sell primarily or
               totally to business enterprises are invited to apply.
             </p>
-            <p className="text-gray-600 leading-relaxed">
+            <p className="text-gray-600 leading-relaxed mb-6">
               The group provides a resource of information for business
               professionals and topics of common interest. Through active
               participation, members promote their own businesses, give
               presentations, increase their visibility, and exchange referrals.
             </p>
+            <Link
+              href="/apply"
+              className="inline-flex items-center gap-2 bg-[#0F1F3C] hover:bg-[#1A3460] text-white text-sm font-semibold px-5 py-2.5 rounded-lg transition-colors"
+            >
+              Apply for Membership →
+            </Link>
           </div>
           <div className="space-y-5">
             {[
@@ -154,21 +160,39 @@ export default function HomePage() {
 
       {/* CTA */}
       <section className="bg-[#0F1F3C]">
-        <div className="max-w-6xl mx-auto px-6 py-16 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
-          <div>
-            <h2 className="text-xl font-bold text-white mb-1">
-              Looking for a TBBF member?
-            </h2>
-            <p className="text-white/50 text-sm">
-              {members.length} professionals. {members.length} industries. One introduction away.
-            </p>
+        <div className="max-w-6xl mx-auto px-6 py-16 grid sm:grid-cols-2 gap-10">
+          <div className="flex flex-col items-start gap-4">
+            <div>
+              <h2 className="text-xl font-bold text-white mb-1">
+                Looking for a TBBF member?
+              </h2>
+              <p className="text-white/50 text-sm">
+                {members.length} professionals. {members.length} industries. One introduction away.
+              </p>
+            </div>
+            <Link
+              href="/members"
+              className="inline-flex items-center gap-2 bg-[#BF9040] hover:bg-[#D4AA5A] text-white font-semibold px-6 py-3 rounded-lg transition-colors text-sm"
+            >
+              Meet our members →
+            </Link>
           </div>
-          <Link
-            href="/members"
-            className="flex-shrink-0 inline-flex items-center gap-2 bg-[#BF9040] hover:bg-[#D4AA5A] text-white font-semibold px-6 py-3 rounded-lg transition-colors text-sm"
-          >
-            Meet our members →
-          </Link>
+          <div className="flex flex-col items-start gap-4 sm:border-l sm:border-white/10 sm:pl-10">
+            <div>
+              <h2 className="text-xl font-bold text-white mb-1">
+                Interested in joining?
+              </h2>
+              <p className="text-white/50 text-sm">
+                B2B sales professionals and business leaders are invited to apply.
+              </p>
+            </div>
+            <Link
+              href="/apply"
+              className="inline-flex items-center gap-2 border border-[#BF9040] text-[#BF9040] hover:bg-[#BF9040] hover:text-white font-semibold px-6 py-3 rounded-lg transition-colors text-sm"
+            >
+              Apply Now →
+            </Link>
+          </div>
         </div>
       </section>
     </>

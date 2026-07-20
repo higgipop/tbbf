@@ -11,9 +11,15 @@ export default function Nav() {
             Tampa Bay Business Forum
           </span>
         </Link>
-        <nav className="flex items-center gap-6">
+        <nav className="flex items-center gap-5">
           <Link href="/members" className="text-white/70 hover:text-white text-sm transition-colors">
             Members
+          </Link>
+          <Link
+            href="/apply"
+            className="bg-[#BF9040] hover:bg-[#D4AA5A] text-white text-sm font-semibold px-4 py-2 rounded-lg transition-colors"
+          >
+            Apply Now
           </Link>
         </nav>
       </div>
