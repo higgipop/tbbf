@@ -123,31 +123,76 @@ export default {
       ? "New Membership Application — Tampa Bay Business Forum"
       : "New message via Tampa Bay Business Forum";
 
+    function row(label, value) {
+      if (!value) return "";
+      return `<tr>
+        <td style="font-size:13px;color:#6b7280;padding:8px 12px 8px 0;border-bottom:1px solid #e5e7eb;white-space:nowrap;vertical-align:top;width:200px">${escHtml(label)}</td>
+        <td style="font-size:13px;color:#1A1A2E;padding:8px 0;border-bottom:1px solid #e5e7eb;line-height:1.5">${escHtml(value)}</td>
+      </tr>`;
+    }
+
     const html = isApplication
-      ? `
-      <div style="font-family:system-ui,sans-serif;max-width:560px;margin:0 auto">
-        <p style="color:#6b7280;font-size:13px;margin-bottom:24px">
-          Submitted via the Tampa Bay Business Forum membership application form
-        </p>
-        <h2 style="font-size:20px;color:#0F1F3C;margin:0 0 4px">
-          Membership Application from ${escHtml(senderName)}
-        </h2>
-        <p style="color:#6b7280;font-size:14px;margin:0 0 24px">
-          ${escHtml(senderEmail)}${senderPhone ? ` · ${escHtml(senderPhone)}` : ""}
-        </p>
-        ${senderCompany || senderIndustry ? `
-        <table style="width:100%;border-collapse:collapse;margin-bottom:20px">
-          ${senderCompany ? `<tr><td style="font-size:13px;color:#6b7280;padding:6px 0;border-bottom:1px solid #e5e7eb;width:120px">Company</td><td style="font-size:13px;color:#1A1A2E;padding:6px 0;border-bottom:1px solid #e5e7eb">${escHtml(senderCompany)}</td></tr>` : ""}
-          ${senderIndustry ? `<tr><td style="font-size:13px;color:#6b7280;padding:6px 0;border-bottom:1px solid #e5e7eb;width:120px">Industry</td><td style="font-size:13px;color:#1A1A2E;padding:6px 0;border-bottom:1px solid #e5e7eb">${escHtml(senderIndustry)}</td></tr>` : ""}
-        </table>` : ""}
-        <div style="background:#f8f7f4;border-left:3px solid #BF9040;padding:16px 20px;border-radius:0 8px 8px 0">
-          <p style="margin:0;color:#1A1A2E;line-height:1.6;white-space:pre-wrap">${escHtml(message)}</p>
+      ? (() => {
+          const a = (isApplication && body.applicationData) ? body.applicationData : {};
+          return `
+      <div style="font-family:system-ui,sans-serif;max-width:620px;margin:0 auto">
+        <div style="background:#0F1F3C;padding:20px 24px;border-radius:8px 8px 0 0">
+          <p style="color:#BF9040;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;margin:0 0 4px">Tampa Bay Business Forum</p>
+          <h1 style="color:#fff;font-size:20px;margin:0">Membership Application</h1>
         </div>
-        <p style="margin-top:24px;font-size:13px;color:#9ca3af">
-          To reply, copy the sender's email above — do not reply directly to this message.
-        </p>
+        <div style="background:#f8f7f4;padding:24px;border-radius:0 0 8px 8px">
+
+          <p style="font-size:12px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:#BF9040;margin:0 0 8px">Contact Information</p>
+          <table style="width:100%;border-collapse:collapse;margin-bottom:24px">
+            ${row("Date", a.date)}
+            ${row("Applicant's Name", a.applicantName)}
+            ${row("Company Name", a.companyName)}
+            ${row("Business Address", a.businessAddress)}
+            ${row("City / State / Zip", a.cityStateZip)}
+            ${row("Business Telephone", a.businessPhone)}
+            ${row("Mobile Telephone", a.mobilePhone)}
+            ${row("Business Email", a.businessEmail)}
+          </table>
+
+          <p style="font-size:12px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:#BF9040;margin:0 0 8px">Business Classification</p>
+          <table style="width:100%;border-collapse:collapse;margin-bottom:24px">
+            ${row("Category", a.category)}
+            ${row("Description of Service/Product", a.serviceDescription)}
+          </table>
+
+          <p style="font-size:12px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:#BF9040;margin:0 0 8px">Experience</p>
+          <table style="width:100%;border-collapse:collapse;margin-bottom:24px">
+            ${row("Years in Tampa Bay", a.yearsInTampaBay)}
+            ${row("Years in Current Role", a.yearsInCurrentRole)}
+          </table>
+
+          <p style="font-size:12px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:#BF9040;margin:0 0 8px">Group Fit</p>
+          <table style="width:100%;border-collapse:collapse;margin-bottom:24px">
+            ${row("Expected Contribution", a.contribution)}
+            ${row("Major Source of Referrals", a.referralSources)}
+            ${row("Hunter or Farmer?", a.hunterOrFarmer)}
+            ${row("Explanation", a.hunterOrFarmerExplain)}
+            ${row("% Business vs. Consumer", a.percentageBusiness)}
+            ${row("Other Networking Groups", a.otherNetworkingGroups || "None")}
+          </table>
+
+          <p style="font-size:12px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:#BF9040;margin:0 0 8px">Commitment & Policies</p>
+          <table style="width:100%;border-collapse:collapse;margin-bottom:24px">
+            ${row("Commits to 8:00 AM arrival", a.commitmentConfirm)}
+            ${row("Member Sponsor", a.memberSponsor || "None listed")}
+          </table>
+
+          <div style="background:#e8f4e8;border-left:3px solid #22c55e;padding:12px 16px;border-radius:0 6px 6px 0;font-size:13px;color:#15803d">
+            ✓ Applicant certified accuracy and agreed to TBBF General Policies
+          </div>
+
+          <p style="margin-top:20px;font-size:12px;color:#9ca3af">
+            To reply, use the business email above — do not reply directly to this message.
+          </p>
+        </div>
       </div>
-      `
+          `;
+        })()
       : `
       <div style="font-family:system-ui,sans-serif;max-width:560px;margin:0 auto">
         <p style="color:#6b7280;font-size:13px;margin-bottom:24px">

@@ -20,15 +20,15 @@ export function LogoMark({ size = 36 }: { size?: number }) {
       <text
         fontFamily="Inter, system-ui, -apple-system, sans-serif"
         fontWeight="800"
-        fontSize="82"
+        fontSize="74"
         fill="#FFFFFF"
         textAnchor="middle"
         dominantBaseline="central"
       >
-        <tspan x="57" y="60">T</tspan>
-        <tspan x="143" y="60">B</tspan>
-        <tspan x="57" y="148">B</tspan>
-        <tspan x="143" y="148">F</tspan>
+        <tspan x="57" y="68">T</tspan>
+        <tspan x="143" y="68">B</tspan>
+        <tspan x="57" y="140">B</tspan>
+        <tspan x="143" y="140">F</tspan>
       </text>
     </svg>
   );
