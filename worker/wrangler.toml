@@ -4,6 +4,6 @@ compatibility_date = "2025-01-01"
 compatibility_flags = ["nodejs_compat"]
 
 [vars]
-ALLOWED_ORIGINS = "https://tampababusinessforum.com,https://tbbf.vercel.app"
+ALLOWED_ORIGINS = "https://tampabusinessforum.com,https://tbbf.vercel.app"
 
 # Set secret via: wrangler secret put RESEND_API_KEY

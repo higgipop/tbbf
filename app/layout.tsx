@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   },
   description:
     "TBBF is Tampa Bay's invite-only professional referral network. 24 vetted members, one per industry, built on trust and consistent deal flow.",
-  metadataBase: new URL("https://tampababusinessforum.com"),
+  metadataBase: new URL("https://tampabusinessforum.com"),
   openGraph: {
     siteName: "Tampa Bay Business Forum",
     locale: "en_US",

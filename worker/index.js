@@ -214,7 +214,7 @@ export default {
     `;
 
     const emailPayload = {
-      from: "Tampa Bay Business Forum <contact@tampababusinessforum.com>",
+      from: "Tampa Bay Business Forum <contact@tampabusinessforum.com>",
       to: [toEmail],
       subject,
       html,

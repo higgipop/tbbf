@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 import { members } from "@/lib/members";
 
-const BASE = "https://tampababusinessforum.com";
+const BASE = "https://tampabusinessforum.com";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const memberUrls = members.map((m) => ({
