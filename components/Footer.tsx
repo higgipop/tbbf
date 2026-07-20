@@ -16,9 +16,17 @@ export default function Footer() {
           <Link href="/members" className="hover:text-white transition-colors">Members</Link>
           <Link href="/apply" className="hover:text-white transition-colors">Apply</Link>
         </nav>
-        <p className="text-white/30 text-xs">
-          &copy; {new Date().getFullYear()} Tampa Bay Business Forum
-        </p>
+        <div className="flex flex-col items-center sm:items-end gap-1">
+          <p className="text-white/30 text-xs">&copy; {new Date().getFullYear()} Tampa Bay Business Forum</p>
+          <a
+            href="https://ultradesignagency.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-white/20 hover:text-white/50 text-xs transition-colors"
+          >
+            Built by ULTRA
+          </a>
+        </div>
       </div>
     </footer>
   );
