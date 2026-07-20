@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 
+
 export const metadata: Metadata = {
   title: "About",
   description:
@@ -31,8 +32,15 @@ export default function AboutPage() {
   return (
     <>
       {/* Header */}
-      <section className="bg-[#0F1F3C] text-white">
-        <div className="max-w-6xl mx-auto px-6 py-20 md:py-28">
+      <section className="relative bg-[#0F1F3C] text-white overflow-hidden">
+        <Image
+          src="/tampa-panoramic.jpg"
+          alt=""
+          fill
+          className="object-cover object-center opacity-25"
+          priority
+        />
+        <div className="relative max-w-6xl mx-auto px-6 py-20 md:py-28">
           <div className="max-w-2xl">
             <p className="text-[#BF9040] text-sm font-semibold tracking-widest uppercase mb-4">
               About TBBF

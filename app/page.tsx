@@ -31,8 +31,15 @@ export default function HomePage() {
       />
 
       {/* Hero */}
-      <section className="bg-[#0F1F3C] text-white">
-        <div className="max-w-6xl mx-auto px-6 py-24 md:py-32">
+      <section className="relative bg-[#0F1F3C] text-white overflow-hidden">
+        <Image
+          src="/tampa-sunset.jpg"
+          alt=""
+          fill
+          className="object-cover object-center opacity-30"
+          priority
+        />
+        <div className="relative max-w-6xl mx-auto px-6 py-24 md:py-32">
           <div className="max-w-2xl">
             <p className="text-[#BF9040] text-sm font-semibold tracking-widest uppercase mb-4">
               Tampa Bay Business Forum
