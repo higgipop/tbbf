@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200" role="img" aria-labelledby="title desc">
+  <title id="title">Tampa Bay Business Forum TB BF monogram</title>
+  <desc id="desc">A deep navy TB over BF geometric monogram inside a thin muted-gold square on a warm cream background.</desc>
+
+  <!-- Brand palette: Navy #0F1F3C · Gold #BF9040 · Cream #FAF7F0 -->
+  <rect width="1200" height="1200" fill="#FAF7F0"/>
+  <rect x="164" y="164" width="872" height="872" fill="none" stroke="#BF9040" stroke-width="12"/>
+
+  <!-- A single real typeface keeps both B glyphs identical and typographically sound. -->
+  <g fill="#0F1F3C" font-family="Arial, Helvetica, sans-serif" font-size="438" font-weight="700">
+    <text x="270" y="578" textLength="668" lengthAdjust="spacingAndGlyphs">TB</text>
+    <text x="270" y="937" textLength="668" lengthAdjust="spacingAndGlyphs">BF</text>
+  </g>
+</svg>
