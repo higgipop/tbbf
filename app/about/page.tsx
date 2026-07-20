@@ -115,18 +115,23 @@ export default function AboutPage() {
           <div className="max-w-2xl">
             <h2 className="text-2xl font-bold text-[#0F1F3C] mb-4">Membership</h2>
             <p className="text-gray-600 leading-relaxed mb-4">
-              TBBF does not accept applications. Every member joined because an
-              existing member vouched for them and the group approved the fit.
-              Each category holds one seat — if yours is open, someone in the group
-              will eventually bring the right person to fill it.
+              Every member joined because an existing member vouched for them and
+              the group approved the fit. Each category holds one seat — if yours
+              is open, you can submit an application for committee review.
             </p>
-            <p className="text-gray-500 text-sm">
+            <p className="text-gray-500 text-sm mb-6">
               If you were referred to this site by a TBBF member,{" "}
               <Link href="/members" className="text-[#BF9040] hover:underline">
                 browse the member directory
               </Link>{" "}
               to connect with the professional you&rsquo;re looking for.
             </p>
+            <Link
+              href="/apply"
+              className="inline-flex items-center gap-2 bg-[#BF9040] hover:bg-[#D4AA5A] text-white text-sm font-semibold px-5 py-2.5 rounded-lg transition-colors"
+            >
+              Apply for Membership →
+            </Link>
           </div>
         </div>
       </section>

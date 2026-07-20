@@ -12,7 +12,9 @@ export default function Footer() {
           </span>
         </Link>
         <nav className="flex items-center gap-6 text-sm text-white/50">
+          <Link href="/about" className="hover:text-white transition-colors">About</Link>
           <Link href="/members" className="hover:text-white transition-colors">Members</Link>
+          <Link href="/apply" className="hover:text-white transition-colors">Apply</Link>
         </nav>
         <p className="text-white/30 text-xs">
           &copy; {new Date().getFullYear()} Tampa Bay Business Forum
