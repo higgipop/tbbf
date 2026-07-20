@@ -7,7 +7,7 @@ export function LogoMark({ size = 36 }: { size?: number }) {
       xmlns="http://www.w3.org/2000/svg"
       aria-label="TBBF"
     >
-      <rect width="200" height="200" fill="#F8F7F4" />
+      <rect width="200" height="200" fill="transparent" />
       <rect
         x="10"
         y="10"
@@ -21,7 +21,7 @@ export function LogoMark({ size = 36 }: { size?: number }) {
         fontFamily="Inter, system-ui, -apple-system, sans-serif"
         fontWeight="800"
         fontSize="82"
-        fill="#0F1F3C"
+        fill="#FFFFFF"
         textAnchor="middle"
         dominantBaseline="central"
       >
