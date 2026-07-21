@@ -51,20 +51,14 @@ export default function OGImage() {
           <h1
             style={{
               color: "white",
-              fontSize: 72,
+              fontSize: 120,
               fontWeight: 800,
               margin: 0,
-              lineHeight: 1.05,
-              maxWidth: 820,
+              lineHeight: 1.0,
             }}
           >
-            One seat per industry.
-            <br />
-            <span style={{ color: "#BF9040" }}>Built on trust.</span>
+            Tampa Network
           </h1>
-          <p style={{ color: "rgba(255,255,255,0.5)", fontSize: 24, margin: 0, fontWeight: 400 }}>
-            24 vetted members. Consistent deal flow. No competitors at the table.
-          </p>
         </div>
 
         {/* Bottom: domain */}
