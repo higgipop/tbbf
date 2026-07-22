@@ -7,7 +7,7 @@ export default function Nav() {
       <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-3 group">
           <LogoMark size={36} />
-          <span className="text-white font-semibold text-sm tracking-wide">
+          <span className="hidden sm:block text-white font-semibold text-sm tracking-wide">
             Tampa Bay Business Forum
           </span>
         </Link>
