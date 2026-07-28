@@ -15,9 +15,6 @@ export default function Nav() {
           <Link href="/about" className="text-white/70 hover:text-white text-sm transition-colors">
             About
           </Link>
-          <Link href="/members" className="text-white/70 hover:text-white text-sm transition-colors">
-            Members
-          </Link>
           <Link
             href="/members"
             className="bg-[#BF9040] hover:bg-[#D4AA5A] text-white text-sm font-semibold px-4 py-2 rounded-lg transition-colors"
