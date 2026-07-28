@@ -19,10 +19,10 @@ export default function Nav() {
             Members
           </Link>
           <Link
-            href="/apply"
+            href="/members"
             className="bg-[#BF9040] hover:bg-[#D4AA5A] text-white text-sm font-semibold px-4 py-2 rounded-lg transition-colors"
           >
-            Apply Now
+            <span className="hidden sm:inline">Meet the </span>Members
           </Link>
         </nav>
       </div>

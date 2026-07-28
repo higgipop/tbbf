@@ -187,17 +187,17 @@ export default function HomePage() {
           <div className="flex flex-col items-start gap-4 sm:border-l sm:border-white/10 sm:pl-10">
             <div>
               <h2 className="text-xl font-bold text-white mb-1">
-                Interested in joining?
+                Membership is by invitation only.
               </h2>
               <p className="text-white/50 text-sm">
-                B2B sales professionals and business leaders are invited to apply.
+                Start by getting to know the room. See who&rsquo;s already at the table.
               </p>
             </div>
             <Link
-              href="/apply"
+              href="/members"
               className="inline-flex items-center gap-2 border border-[#BF9040] text-[#BF9040] hover:bg-[#BF9040] hover:text-white font-semibold px-6 py-3 rounded-lg transition-colors text-sm"
             >
-              Apply Now →
+              View Our Members →
             </Link>
           </div>
         </div>
