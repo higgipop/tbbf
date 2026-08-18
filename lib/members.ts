@@ -70,6 +70,7 @@ export const members: Member[] = [
     category: "Merchant Services",
     email: "jihrig@propelrpay.com",
     phone: "(740) 359-6065",
+    hasPhoto: true,
   },
   {
     slug: "jon-slater",
@@ -115,7 +116,7 @@ export const members: Member[] = [
     slug: "michael-higgins",
     name: "Michael Higgins",
     company: "ULTRA Design Agency",
-    category: "Websites: Deploy | Maintain | Govern",
+    category: "Websites: Design | Maintain | Govern",
     email: "michael@ultradesignagency.com",
     phone: "(813) 205-6160",
     website: "https://ultradesignagency.com",
@@ -133,6 +134,7 @@ export const members: Member[] = [
     category: "Insurance (Health / Life)",
     email: "mkimling@mail.com",
     phone: "(727) 642-4366",
+    hasPhoto: true,
   },
   {
     slug: "nick-smith",
