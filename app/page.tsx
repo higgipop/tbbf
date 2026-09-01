@@ -33,7 +33,7 @@ export default function HomePage() {
       {/* Hero */}
       <section className="relative bg-[#0F1F3C] text-white overflow-hidden">
         <Image
-          src="/tampa-sunset.jpg"
+          src="/tampa-skyline-sunset.jpg"
           alt=""
           fill
           className="object-cover object-center opacity-30"
