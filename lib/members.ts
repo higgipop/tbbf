@@ -80,7 +80,7 @@ export const members: Member[] = [
   {
     slug: "jon-slater",
     name: "Jon Slater",
-    company: "Lincoln Property Company of Florida",
+    company: "Lincoln Property Company",
     category: "Real Estate - Commercial Sales & Leasing",
     email: "jslater@lpc.com",
     phone: "(813) 505-3612",
@@ -183,7 +183,7 @@ export const members: Member[] = [
     company: "Southlake Signs Tampa",
     category: "Signs & Graphics",
     email: "ron@southlakesignstampa.com",
-    phone: "(727) 746-5899",
+    phone: "(207) 272-6348",
     companyBio: "Southlake Signs was founded in 2023 with a vision of bringing a highly consultative approach to the sign industry. We pride ourselves in quality project management.",
     areaOfFocus: "Southlake Signs supports their corporate clients branding solutions. They can help their clients get their branding on any physical surface. Their primary streams of revenue are from permitted exterior signs and interior ADA packages. Their product offerings cover both interior and exterior sign packages.",
     bio: "Ron brings several years of corporate operations management to the sign industry. He has been building his brand and offerings over the last four years in business.",
@@ -220,7 +220,7 @@ export const members: Member[] = [
     company: "Olympia Moving",
     category: "Commercial Mover",
     email: "ghoffman@olympiamoving.com",
-    phone: "(813) 736-1662",
+    phone: "(813) 362-0199",
   },
   {
     slug: "vanessa-ferguson",
