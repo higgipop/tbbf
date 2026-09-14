@@ -34,10 +34,12 @@ export const members: Member[] = [
   {
     slug: "daniel-brunal",
     name: "Daniel Brunal",
-    company: "Loros Productions",
+    company: "Parrot Productions",
     category: "Video Production",
-    email: "daniel.brunal@lorosproductions.com",
-    phone: "(813) 603-7567",
+    email: "daniel@parrot.productions",
+    phone: "(850) 218-6486",
+    companyBio: "Vibrant, story-driven video that gets results. Based in Tampa Bay, we create cinematic videos for businesses, nonprofits, and organizations that need to connect with their audience and drive action.",
+    linkedin: "https://www.linkedin.com/in/daniel-brunal-322b57294/",
   },
   {
     slug: "fred-wallrapp",
@@ -66,10 +68,13 @@ export const members: Member[] = [
   {
     slug: "jennifer-ihrig",
     name: "Jennifer Ihrig",
-    company: "Propelr",
+    company: "Propelr Payments",
     category: "Merchant Services",
     email: "jihrig@propelrpay.com",
     phone: "(740) 359-6065",
+    areaOfFocus: "A variety of industries, including restaurants, retail, healthcare and medical practices, automotive, hospitality, professional services, home services, and franchise or multi-location businesses.",
+    bio: "As a Senior Payments Advisor with Propelr Pay, I help businesses find smarter, more cost-effective payment solutions. With over 13 years of industry experience, I provide customized payment processing, POS systems, surcharge and cash-discount programs, ACH solutions, and integrations—all backed by transparent pricing and personalized support.",
+    linkedin: "https://www.linkedin.com/in/jennifer-ihrig-58766912/",
     hasPhoto: true,
   },
   {
@@ -111,6 +116,10 @@ export const members: Member[] = [
     category: "Business Broker",
     email: "m.purtee@murphybusiness.com",
     phone: "(727) 518-5620",
+    companyBio: "Founded in a small Clearwater office in 1994, Murphy Business Sales has grown into one of the country’s largest and longest-established business brokerages, with offices in 38 states and Canada. The firm represents more than $1 billion in businesses each year and is known for its highly trained brokers and commitment to ethical practices.",
+    areaOfFocus: "Mark helps people buy and sell businesses of all kinds. He helps clients understand the value of a company and some of the available financing structures. As someone who had sold his business, and had acquired businesses personally, Mark’s mission is to help others with the entire process of transitioning a business. Whether it is maximizing the value of the sale of a business so the owner can enjoy retirement or helping someone evaluate and scrutinize a business to acquire.",
+    bio: "At age 22, Mark launched his first company while studying finance at Georgia State University. He later became a stockbroker, acquired a golf course, twice built national companies to more than eight figures, and sold his interests to move to the beach. After relocating to Florida, Mark worked with major developers, completed executive training in implementing change at Wharton, and received negotiations training at Harvard. He also studied business valuation through Duke University and is currently pursuing his Business Certified Appraiser designation.",
+    linkedin: "https://www.linkedin.com/in/markpurtee/",
   },
   {
     slug: "michael-higgins",
@@ -163,6 +172,9 @@ export const members: Member[] = [
     category: "Digital Marketing & CRM",
     email: "robert@robertbishop.us",
     phone: "(310) 760-6365",
+    companyBio: "Bishop Marketing Strategy is a digital marketing and growth firm based in Tampa Bay. The firm works with owner-run companies in the skilled trades, construction, and medical fields, from established shops that want to grow to new practices opening their doors. Most engagements start with the Foundation Package, a short diagnostic that sorts out who the business is really for, what it should be saying, and what to fix first. From there the work usually includes search engine optimization, Google Ads, paid social, CRM setup, and podcast production. Every client gets one point of contact and a straight answer about what the marketing is producing.",
+    areaOfFocus: "Robert is TBBF's Digital Marketing and CRM specialist. He works with skilled trades, construction and building companies, and medical and healthcare practices across Tampa Bay and the rest of the country. His work covers search engine optimization, Google Ads, paid social, and building out CRM systems so leads stop falling through the cracks after they come in. He also runs a diagnostic process for owners who aren't sure what's broken yet, which sorts out who the business is really for, what it should be saying, and what to fix first. He's a good referral when an owner is spending money on marketing and can't tell what it's producing, when the phone rings but the jobs aren't closing, or when a new practice or shop is opening and needs its marketing built from scratch.",
+    bio: "Robert grew up in Phoenix, Arizona and moved to Tampa Bay in 2020. Outside of work, he helps his wife run her Pilates studio and spends as much time at the beach as he can get. He's an Eagle Scout and still teaches merit badge classes on business and salesmanship from time to time. Through Bishop Marketing Strategy, he works mostly with skilled trades and home service companies, helping owners see exactly where their growth is breaking down instead of guessing at it.",
     linkedin: "https://www.linkedin.com/in/lereybishop/",
   },
   {
@@ -172,6 +184,10 @@ export const members: Member[] = [
     category: "Signs & Graphics",
     email: "ron@southlakesignstampa.com",
     phone: "(727) 746-5899",
+    companyBio: "Southlake Signs was founded in 2023 with a vision of bringing a highly consultative approach to the sign industry. We pride ourselves in quality project management.",
+    areaOfFocus: "Southlake Signs supports their corporate clients branding solutions. They can help their clients get their branding on any physical surface. Their primary streams of revenue are from permitted exterior signs and interior ADA packages. Their product offerings cover both interior and exterior sign packages.",
+    bio: "Ron brings several years of corporate operations management to the sign industry. He has been building his brand and offerings over the last four years in business.",
+    linkedin: "https://www.linkedin.com/in/ron-martin40656264?",
   },
   {
     slug: "sergei-galeano",
@@ -196,6 +212,7 @@ export const members: Member[] = [
     category: "Business & Residential Security",
     email: "sspiering@adt.com",
     phone: "(727) 742-4648",
+    bio: "20 years of high performance. Conssistant Centurian Club winner. Focused on small businesses and residential security. Alarm, cameras, access contrl",
   },
   {
     slug: "gary-hoffman",
