@@ -176,6 +176,7 @@ export const members: Member[] = [
     areaOfFocus: "Robert is TBBF's Digital Marketing and CRM specialist. He works with skilled trades, construction and building companies, and medical and healthcare practices across Tampa Bay and the rest of the country. His work covers search engine optimization, Google Ads, paid social, and building out CRM systems so leads stop falling through the cracks after they come in. He also runs a diagnostic process for owners who aren't sure what's broken yet, which sorts out who the business is really for, what it should be saying, and what to fix first. He's a good referral when an owner is spending money on marketing and can't tell what it's producing, when the phone rings but the jobs aren't closing, or when a new practice or shop is opening and needs its marketing built from scratch.",
     bio: "Robert grew up in Phoenix, Arizona and moved to Tampa Bay in 2020. Outside of work, he helps his wife run her Pilates studio and spends as much time at the beach as he can get. He's an Eagle Scout and still teaches merit badge classes on business and salesmanship from time to time. Through Bishop Marketing Strategy, he works mostly with skilled trades and home service companies, helping owners see exactly where their growth is breaking down instead of guessing at it.",
     linkedin: "https://www.linkedin.com/in/lereybishop/",
+    hasPhoto: true,
   },
   {
     slug: "ron-martin",
